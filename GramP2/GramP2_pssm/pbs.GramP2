@@ -1,0 +1,12 @@
+#PBS -m abe
+#PBS -M abdollah.dehzangi@griffithuni.edu.au
+#PBS -N BLASTGramP2
+#PBS -l select=1:ncpus=1:mem=24g
+#PBS -l walltime=996:00:00
+source $HOME/.bashrc
+###module load  matlab/2009b  (if using matlab 2009b)
+###module load  matlab/2011a
+echo "Starting job"
+/export/home/s2784083/GramP2.sh 
+echo "Done with job"
+
